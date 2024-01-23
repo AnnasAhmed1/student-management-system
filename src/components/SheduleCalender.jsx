@@ -6,12 +6,79 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 const localizer = momentLocalizer(moment);
 
 const MyScheduleCalendar = () => {
-  const [events, setEvents] = useState([]);
+  // const [events, setEvents] = useState([]);
   const [newEvent, setNewEvent] = useState({
     title: "",
     start: "",
     end: "",
   });
+  const events = [
+    {
+      title: "MTH240 Lecture",
+      start: new Date(2024, 0, 22, 8, 0),
+      end: new Date(2024, 0, 22, 10, 0),
+    },
+    {
+      title: "CPS188 Lecture",
+      start: new Date(2024, 0, 22, 10, 0),
+      end: new Date(2024, 0, 22, 12, 0),
+    },
+    {
+      title: "PCS125 Lab/Tutorial",
+      start: new Date(2024, 0, 22, 12, 0),
+      end: new Date(2024, 0, 22, 14, 0),
+    },
+    {
+      title: "CPS188 Lab",
+      start: new Date(2024, 0, 22, 14, 0),
+      end: new Date(2024, 0, 22, 16, 0),
+    },
+    {
+      title: "MTH240 Lecture",
+      start: new Date(2024, 0, 23, 8, 0),
+      end: new Date(2024, 0, 23, 10, 0),
+    },
+    {
+      title: "ELE202 Lecture",
+      start: new Date(2024, 0, 23, 10, 0),
+      end: new Date(2024, 0, 23, 12, 0),
+    },
+    {
+      title: "MTH240 Lab",
+      start: new Date(2024, 0, 23, 12, 0),
+      end: new Date(2024, 0, 23, 13, 0),
+    },
+    {
+      title: "FRE101 Lecture",
+      start: new Date(2024, 0, 23, 18, 0),
+      end: new Date(2024, 0, 23, 21, 0),
+    },
+    {
+      title: "PCS125 Lecture",
+      start: new Date(2024, 0, 24, 11, 0),
+      end: new Date(2024, 0, 24, 12, 0),
+    },
+    {
+      title: "CPS188 Lecture",
+      start: new Date(2024, 0, 24, 14, 0),
+      end: new Date(2024, 0, 24, 16, 0),
+    },
+    {
+      title: "PCS125 Lecture",
+      start: new Date(2024, 0, 25, 8, 0),
+      end: new Date(2024, 0, 25, 10, 0),
+    },
+    {
+      title: "CPS188 Lecture",
+      start: new Date(2024, 0, 25, 10, 0),
+      end: new Date(2024, 0, 25, 12, 0),
+    },
+    {
+      title: "ELE202 Lab/Tutorial",
+      start: new Date(2024, 0, 25, 15, 0),
+      end: new Date(2024, 0, 25, 18, 0),
+    },
+  ];
 
   // State to hold the calendar's date range
   const [start, setStart] = useState(new Date());
@@ -31,18 +98,36 @@ const MyScheduleCalendar = () => {
     });
   };
 
+  const eventStyleGetter = (event, start, end, isSelected) => {
+    return {
+      style: {
+        backgroundColor: "rgb(60, 207, 60)", // Background color
+        color: "black", // Text color
+        borderRadius: "0px", // Optional: Adjust border radius
+        border: "1px solid #ccc", // Optional: Add border
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+        // margin:"auto",
+        // paddingTop:"100%"
+      },
+    };
+  };
+
   const handleAddEvent = () => {
-    if (newEvent.title && newEvent.start && newEvent.end) {
-      setEvents([
-        ...events,
-        {
-          title: newEvent.title,
-          start: new Date(newEvent.start),
-          end: new Date(newEvent.end),
-        },
-      ]);
-      setNewEvent({ title: "", start: "", end: "" }); // Reset the form
-    }
+    // if (newEvent.title && newEvent.start && newEvent.end) {
+    //   setEvents([
+    //     ...events,
+    //     {
+    //       title: newEvent.title,
+    //       start: new Date(newEvent.start),
+    //       end: new Date(newEvent.end),
+    //     },
+    //   ]);
+    //   setNewEvent({ title: "", start: "", end: "" }); // Reset the form
+    // }
   };
 
   return (
@@ -138,6 +223,7 @@ const MyScheduleCalendar = () => {
         startAccessor="start"
         endAccessor="end"
         defaultView="week"
+        eventPropGetter={eventStyleGetter}
         views={["week"]}
         min={new Date(0, 0, 0, 8, 0, 0)} // 8.00 AM
         max={new Date(0, 0, 0, 21, 0, 0)} // 9.00 PM
