@@ -1,0 +1,47 @@
+/* .about-heading{
+    animation: expand 3s linear;
+}
+
+@keyframes expand {
+    from{
+        max-width: 0;
+    }
+    to{
+        max-width: 100%;
+    }
+}
+
+.slide-in{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #DB664B;
+    transform-origin: bottom;
+    z-index: 999;
+}
+
+.slide-out{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #DB664B;
+    transform-origin: left;
+    z-index: 999;
+}
+
+.video-container {
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+
+/* *{
+    outline: 1px solid red;
+} */ 
