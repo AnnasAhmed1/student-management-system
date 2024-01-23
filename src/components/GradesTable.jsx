@@ -123,9 +123,9 @@ const GradeDetails = ({ termGPA, cumulativeGPA, academicStanding }) => (
 const GradesTable = () => {
   return (
     <GradeDetails
-      termGPA="0.000"
-      cumulativeGPA="1.130"
-      academicStanding="Academic Standing, Permanent Program Withdrawal"
+      termGPA="2.930"
+      cumulativeGPA="2.100"
+      academicStanding="Clear"
     />
   );
 };

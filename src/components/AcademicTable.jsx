@@ -138,6 +138,105 @@ const data = [
   },
   // ...more rows
 ];
+// const data = [
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   {
+//     class: 'CPS 188',
+//     description: 'Computer Programming Fundamentals',
+//     term: 'Winter 2024',
+//     grade: 'A',
+//     units: '1.00',
+//     status: 'Taken',
+//   },
+//   // ...more rows
+// ];
 
 const customStyles = {
   
