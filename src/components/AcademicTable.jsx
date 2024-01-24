@@ -71,7 +71,7 @@ const data = [
   },
   {
     class: "ELE 202",
-    description: "CElectircal Circuit II",
+    description: "Electircal Circuit II",
     term: "Winter 2024",
     grade: " ",
     units: "1.00",
