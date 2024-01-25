@@ -34,7 +34,7 @@ const columns = [
         <div
           style={{
             display: "inline-block",
-            color: row.status === "Taken" ? "green" : "red",
+            color: row.status === "In Progress" ? "green" : "red",
           }}
         >
           {row.status}
@@ -51,7 +51,7 @@ const data = [
     term: "Spring/Summer 2023",
     grade: " ",
     units: "1.00",
-    status: "Taken",
+    status: "In Progress",
   },
   {
     class: "CPS 188",
@@ -59,7 +59,7 @@ const data = [
     term: "Winter 2024",
     grade: " ",
     units: "1.00",
-    status: "In Cart",
+    status: "In Progress",
   },
   {
     class: "PCS 125",
@@ -67,7 +67,7 @@ const data = [
     term: "Winter 2024",
     grade: " ",
     units: "1.00",
-    status: "Taken",
+    status: "In Progress",
   },
   {
     class: "ELE 202",
@@ -75,7 +75,7 @@ const data = [
     term: "Winter 2024",
     grade: " ",
     units: "1.00",
-    status: "Taken",
+    status: "In Progress",
   },
   {
     class: "FRE 101",
@@ -83,7 +83,7 @@ const data = [
     term: "Winter 2024",
     grade: " ",
     units: "1.00",
-    status: "Taken",
+    status: "In Progress",
   },
 
   // ...more rows
