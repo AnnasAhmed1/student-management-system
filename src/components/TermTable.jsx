@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import H3 from './headings/H3';
-import PSm from './paragraphs/P_Sm';
-import { Link } from 'react-router-dom';
+import H3 from "./headings/H3";
+import PSm from "./paragraphs/P_Sm";
+import { Link } from "react-router-dom";
 // const termColumns = [
 //   {
 //     name: 'Term',
@@ -33,13 +33,15 @@ import { Link } from 'react-router-dom';
 //   // ...other terms
 // ];
 
-const TermTable = (props) =>{ 
-    return(
-      <Link to={props.link}>
-  <div className='w-full bg-color1 hover:bg-hovcolor1 border flex flex-col items-start justify-center'>
-    <H3>{props.term}</H3>
-    <PSm>{props.status}</PSm>
-  </div></Link>
-);}
+const TermTable = (props) => {
+  return (
+    <Link to={props.link}>
+      <div className="w-full bg-color1 hover:bg-hovcolor1 border pl-2 flex flex-col items-start justify-center">
+        <H3>{props.term}</H3>
+        <PSm>{props.status}</PSm>
+      </div>
+    </Link>
+  );
+};
 
-export default TermTable
+export default TermTable;

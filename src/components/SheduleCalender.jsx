@@ -12,73 +12,79 @@ const MyScheduleCalendar = () => {
     start: "",
     end: "",
   });
-  const events = [
+  let today = new Date().getDate();
+  let currentMonth = new Date().getMonth();
+  let currentYear = new Date().getFullYear();
+  let currentDay = new Date().getDay();
+  let currentDate = new Date().getDate() - currentDay;
+
+  const [events, setEvents] = useState([
     {
       title: "MTH240 Lecture",
-      start: new Date(2024, 0, 22, 8, 0),
-      end: new Date(2024, 0, 22, 10, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 1, 8, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 1, 10, 0),
     },
     {
       title: "CPS188 Lecture",
-      start: new Date(2024, 0, 22, 10, 0),
-      end: new Date(2024, 0, 22, 12, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 1, 10, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 1, 12, 0),
     },
     {
       title: "PCS125 Lab/Tutorial",
-      start: new Date(2024, 0, 22, 12, 0),
-      end: new Date(2024, 0, 22, 14, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 1, 12, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 1, 14, 0),
     },
     {
       title: "CPS188 Lab",
-      start: new Date(2024, 0, 22, 14, 0),
-      end: new Date(2024, 0, 22, 16, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 1, 14, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 1, 16, 0),
     },
     {
       title: "MTH240 Lecture",
-      start: new Date(2024, 0, 23, 8, 0),
-      end: new Date(2024, 0, 23, 10, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 2, 8, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 2, 10, 0),
     },
     {
       title: "ELE202 Lecture",
-      start: new Date(2024, 0, 23, 10, 0),
-      end: new Date(2024, 0, 23, 12, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 2, 10, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 2, 12, 0),
     },
     {
       title: "MTH240 Lab",
-      start: new Date(2024, 0, 23, 12, 0),
-      end: new Date(2024, 0, 23, 13, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 2, 12, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 2, 13, 0),
     },
     {
       title: "FRE101 Lecture",
-      start: new Date(2024, 0, 23, 18, 0),
-      end: new Date(2024, 0, 23, 21, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 2, 18, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 2, 21, 0),
     },
     {
       title: "PCS125 Lecture",
-      start: new Date(2024, 0, 24, 11, 0),
-      end: new Date(2024, 0, 24, 12, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 3, 11, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 3, 12, 0),
     },
     {
       title: "CPS188 Lecture",
-      start: new Date(2024, 0, 24, 14, 0),
-      end: new Date(2024, 0, 24, 16, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 3, 14, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 3, 16, 0),
     },
     {
       title: "PCS125 Lecture",
-      start: new Date(2024, 0, 25, 8, 0),
-      end: new Date(2024, 0, 25, 10, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 4, 8, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 4, 10, 0),
     },
     {
       title: "CPS188 Lecture",
-      start: new Date(2024, 0, 25, 10, 0),
-      end: new Date(2024, 0, 25, 12, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 4, 10, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 4, 12, 0),
     },
     {
       title: "ELE202 Lab/Tutorial",
-      start: new Date(2024, 0, 25, 15, 0),
-      end: new Date(2024, 0, 25, 18, 0),
+      start: new Date(currentYear, currentMonth, currentDate + 4, 15, 0),
+      end: new Date(currentYear, currentMonth, currentDate + 4, 18, 0),
     },
-  ];
+  ]);
 
   // State to hold the calendar's date range
   const [start, setStart] = useState(new Date());

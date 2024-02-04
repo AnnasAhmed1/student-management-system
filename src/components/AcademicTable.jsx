@@ -48,7 +48,7 @@ const data = [
   {
     class: "MTH 240",
     description: "Calculus II",
-    term: "Spring/Summer 2023",
+    term: "Winter 2024",
     grade: " ",
     units: "1.00",
     status: "In Progress",
