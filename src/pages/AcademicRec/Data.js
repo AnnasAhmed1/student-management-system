@@ -74,32 +74,56 @@ export const termData = [
   {
     term: "Fall 2023",
     status: "Undergraduate",
-    link: { pathname: "viewgrades", state: { semester: "Fall 2023" } },
+    link: {
+      pathname: "viewgrades",
+      search: "?sem=Fall-2023",
+      state: { semester: "Fall 2023" },
+    },
   },
   {
     term: "Spring/Summer 2023",
     status: "Undergraduate",
-    link: { pathname: "viewgrades", state: { semester: "Spring/Summer 2023" } },
+    link: {
+      pathname: "viewgrades",
+      search: "?sem=Spring/Summer-2023",
+      state: { semester: "Spring/Summer 2023" },
+    },
   },
 
   {
     term: "Fall 2022",
     status: "Undergraduate",
-    link: { pathname: "viewgrades", state: { semester: "Fall 2022" } },
+    link: {
+      pathname: "viewgrades",
+      search: "?sem=Fall-2022",
+      state: { semester: "Fall 2022" },
+    },
   },
   {
     term: "Winter 2022",
     status: "Undergraduate",
-    link: { pathname: "viewgrades", state: { semester: "Winter 2022" } },
+    link: {
+      pathname: "viewgrades",
+      search: "?sem=Winter-2022",
+      state: { semester: "Winter 2022" },
+    },
   },
   {
     term: "Fall 2021",
     status: "Undergraduate",
-    link: { pathname: "viewgrades", state: { semester: "Fall 2021" } },
+    link: {
+      pathname: "viewgrades",
+      search: "?sem=Fall-2021",
+      state: { semester: "Fall 2021" },
+    },
   },
   {
     term: "Fall 2020",
     status: "Undergraduate",
-    link: { pathname: "viewgrades", state: { semester: "Fall 2020" } },
+    link: {
+      pathname: "viewgrades",
+      search: "?sem=Fall-2020",
+      state: { semester: "Fall 2020" },
+    },
   },
 ];

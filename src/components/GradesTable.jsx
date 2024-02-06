@@ -31,44 +31,6 @@ const columns = [
   },
 ];
 
-const data = [
-  {
-    class: "CEN 199",
-    units: "1.00",
-    grading: "Pass/Fail",
-    grade: "INP",
-    gradePoints: " ",
-  },
-  {
-    class: "CMN 432",
-    units: "1.00",
-    grading: "Graded",
-    grade: "D+",
-    gradePoints: "1.330",
-  },
-  {
-    class: "ECN 801",
-    units: "1.00",
-    grading: "Graded",
-    grade: "A-",
-    gradePoints: "3.670",
-  },
-  {
-    class: "EES 512",
-    units: "1.00",
-    grading: "Graded",
-    grade: "B-",
-    gradePoints: "2.670",
-  },
-  {
-    class: "ENG 101",
-    units: "1.00",
-    grading: "Graded",
-    grade: "C+",
-    gradePoints: "2.330",
-  },
-];
-
 const customStyles = {
   headCells: {
     style: {
@@ -93,7 +55,7 @@ const customStyles = {
   },
 };
 
-const GradeDetails = ({ termGPA, cumulativeGPA, academicStanding }) => (
+const GradeDetails = ({ termGPA, cumulativeGPA, academicStanding, data }) => (
   <div className="m-4">
     <div className="mb-4">
       <h2 className="text-lg">View Grades</h2>
@@ -120,12 +82,13 @@ const GradeDetails = ({ termGPA, cumulativeGPA, academicStanding }) => (
   </div>
 );
 
-const GradesTable = () => {
+const GradesTable = ({ data }) => {
   return (
     <GradeDetails
-      termGPA="2.930"
-      cumulativeGPA="2.100"
-      academicStanding="Clear"
+      termGPA={data.termGPA}
+      cumulativeGPA={data.cumGPA}
+      academicStanding={data.academicStanding}
+      data={data.subjects}
     />
   );
 };

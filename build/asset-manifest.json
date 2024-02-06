@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ff9f97df.css",
-    "main.js": "/static/js/main.5dc5a5a6.js",
+    "main.js": "/static/js/main.a5562db9.js",
     "static/media/approval.455x512.png": "/static/media/approval.455x512.14e2f1829556b3730dc7.png",
     "static/media/swap_arrows.png": "/static/media/swap_arrows.189ea00f26f91ef54f29.png",
     "static/media/financial_aid.png": "/static/media/financial_aid.3ae6169bbe0bd78ce668.png",
@@ -36,10 +36,10 @@
     "static/media/credit-card-refund.svg": "/static/media/credit-card-refund.2ff6726bd9d870efb68eaf5e1240dd80.svg",
     "static/media/regional-indicator-symbol-letter-i.svg": "/static/media/regional-indicator-symbol-letter-i.a834e1d41746fddb4ea9663e3a525372.svg",
     "main.ff9f97df.css.map": "/static/css/main.ff9f97df.css.map",
-    "main.5dc5a5a6.js.map": "/static/js/main.5dc5a5a6.js.map"
+    "main.a5562db9.js.map": "/static/js/main.a5562db9.js.map"
   },
   "entrypoints": [
     "static/css/main.ff9f97df.css",
-    "static/js/main.5dc5a5a6.js"
+    "static/js/main.a5562db9.js"
   ]
 }
