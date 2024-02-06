@@ -74,32 +74,32 @@ export const termData = [
   {
     term: "Fall 2023",
     status: "Undergraduate",
-    link: "viewgrades",
+    link: { pathname: "viewgrades", state: { semester: "Fall 2023" } },
   },
   {
     term: "Spring/Summer 2023",
     status: "Undergraduate",
-    link: "viewgrades",
+    link: { pathname: "viewgrades", state: { semester: "Spring/Summer 2023" } },
   },
 
   {
     term: "Fall 2022",
     status: "Undergraduate",
-    link: "viewgrades",
+    link: { pathname: "viewgrades", state: { semester: "Fall 2022" } },
   },
   {
     term: "Winter 2022",
     status: "Undergraduate",
-    link: "viewgrades",
+    link: { pathname: "viewgrades", state: { semester: "Winter 2022" } },
   },
   {
     term: "Fall 2021",
     status: "Undergraduate",
-    link: "viewgrades",
+    link: { pathname: "viewgrades", state: { semester: "Fall 2021" } },
   },
   {
     term: "Fall 2020",
     status: "Undergraduate",
-    link: "viewgrades",
+    link: { pathname: "viewgrades", state: { semester: "Fall 2020" } },
   },
 ];
