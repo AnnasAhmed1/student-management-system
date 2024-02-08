@@ -1,11 +1,12 @@
-import React from 'react'
-import H3 from '../../components/headings/H3'
+import React from "react";
+
+import Tabs from "../../components/Tabs";
 const ViewClass = () => {
   return (
-    <div className='text-center'>
-        <H3>You are not registered in any class at this time</H3>
+    <div className="">
+      <Tabs />
     </div>
-  )
-}
+  );
+};
 
-export default ViewClass
+export default ViewClass;
