@@ -13,7 +13,7 @@ const ViewGrades = () => {
     "Fall-2023": {
       termGPA: "2.930",
       cumGPA: "2.100",
-      academicStanding: "Clear",
+      academicStanding: "Probationary",
       subjects: [
         {
           class: "CEN 199",

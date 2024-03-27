@@ -22,7 +22,8 @@ const Schedule = () => {
 
       {/* Time Slots Table */}
       <div className='my-8'>
-     <ScheduleCalendar/></div> 
+     <ScheduleCalendar/>
+     </div> 
 
       {/* Display Options */ }
       <PSm  styles={'text-textcol2'}>Display Options</PSm>
